@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      function func() {
+        document.getElementById('ex').style.color = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="main"><strong>Aula 3</strong> JavaScript Onde Para</h1>
+    
+    <p id="ex">exemplo</p>
+    
+    <button onclick="func()">Click-me</button>
+    <button onclick="func1()">Click-me 1</button>
+    <button onclick="func2()">Click-me 2</button>
+    
+    <script>
+      document.getElementById('ex').innerHTML = "Hello JavaScript";
+      
+      function func1() {
+        document.getElementById('ex').style.fontSize = "40px";
+      }
+    </script>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
